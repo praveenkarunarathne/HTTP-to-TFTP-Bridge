@@ -89,11 +89,8 @@ Once running, the server listens on UDP port `69`. The "filename" you request vi
 Using a standard command-line TFTP client:
 
 ```bash
-# Connect to the local bridge
-tftp localhost
-
 # Request a file from the web
-tftp> get http://example.com/file.txt
+tftp -s 65464 http://example.com/file.txt file.txt
 ```
 
 ### How It Works
