@@ -90,7 +90,7 @@ Using a standard command-line TFTP client:
 
 ```bash
 # Request a file from the web
-tftp -s 65464 http://example.com/file.txt file.txt
+tftp -s 65464 localhost http://example.com/file.txt file.txt
 ```
 
 ### How It Works
