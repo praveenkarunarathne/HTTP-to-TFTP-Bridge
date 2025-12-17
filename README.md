@@ -68,14 +68,14 @@ Instead of maintaining a separate TFTP server with local files, this bridge dyna
 
 #### Option 2: Docker Deployment
 
-1.  **Build the image**
+1.  **Pull the image**
     ```bash
-    docker build -t tftp-bridge .
+    docker pull praveenkarunarathne/http-to-tftp-bridge
     ```
 
 2.  **Run the container**
     ```bash
-    docker run -d -p 69:69/udp --name tftp-server tftp-bridge
+    docker run -d -p 69:69/udp --name tftp-server praveenkarunarathne/http-to-tftp-bridge
     ```
 
 ---
